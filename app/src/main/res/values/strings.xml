@@ -1,0 +1,22 @@
+<resources>
+    <!-- Geral -->
+    <string name="app_name">WMovie</string>
+    <string name="config_base_url">http://www.omdbapi.com/</string>
+    <string name="carregando">carregando...</string>
+
+    <!-- Menu Main -->
+    <string name="menu_search">Search Movie</string>
+    <string name="search_hint">search movie</string>
+    <string name="toast_main_listagem_vazia">Sem filme(s) para exibir!</string>
+    <string name="toast_main_cadastro_vazia">Sem filme(s) cadastrados!</string>
+
+    <!-- Search Movies -->
+    <string name="toast_erro_load_search">Não foi possível realizar a pesquisa. Verifique a conexão com a internet!</string>
+
+    <!-- Movie Detail -->
+    <string name="toast_erro_load_detail">Não foi possível obter detalhes do filme. Verifique a conexão com a internet!</string>
+    <string name="toast_erro_save_delete_detail">Não foi possível realizar a operação.</string>
+    <string name="toast_sucesso_save_delete_detail">Operação realizada com sucesso!</string>
+    <string name="toast_sem_imagem_detail">Sem poster disponível para esse filme. Role a tela para baixo para salvar ou excluir!</string>
+
+</resources>
