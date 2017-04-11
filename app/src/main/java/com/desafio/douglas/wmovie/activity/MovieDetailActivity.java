@@ -2,6 +2,7 @@ package com.desafio.douglas.wmovie.activity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
@@ -9,7 +10,6 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
@@ -23,7 +23,7 @@ import com.desafio.douglas.wmovie.background_task.IDownloadDetailMovieCallBack;
 import com.desafio.douglas.wmovie.background_task.SaveOrDeleteMovieDetailAsync;
 import com.desafio.douglas.wmovie.model.DetailMovie;
 import com.desafio.douglas.wmovie.model.Search;
-import com.desafio.douglas.wmovie.util.Utils;
+import com.desafio.douglas.wmovie.util.ImagemUtils;
 import com.desafio.douglas.wmovie.widget.SquareImageView;
 
 import butterknife.BindView;
@@ -126,7 +126,7 @@ public class MovieDetailActivity extends AppCompatActivity implements IDownloadD
                 Toast.makeText(this, getString(R.string.toast_sem_imagem_detail), Toast.LENGTH_LONG).show();
                 appBarLayoutDetail.setExpanded(false);
             }else {
-                Utils.loadImageCollapsingCacheOrOnLine(this, detailMovie.getPoster(), imgDetail);
+                ImagemUtils.loadImageCollapsingCacheOrOnLine(this, detailMovie.getPoster(), imgDetail);
             }
         }
         definirIconeAcao();

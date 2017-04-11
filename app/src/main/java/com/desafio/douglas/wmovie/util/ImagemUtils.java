@@ -1,7 +1,6 @@
 package com.desafio.douglas.wmovie.util;
 
 import android.content.Context;
-import android.net.ConnectivityManager;
 import android.util.Log;
 import android.widget.ImageView;
 
@@ -11,31 +10,12 @@ import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 /**
- * Created by worlo on 06/04/2017.
+ * Created by worlo on 10/04/2017.
  */
 
-public class Utils {
+public class ImagemUtils {
 
-    private static final String TAG = Utils.class.getName();
-
-    public static boolean isInternetAtiva(Context ctx) {
-        try {
-            ConnectivityManager cm =
-                    (ConnectivityManager) ctx.getSystemService(Context.CONNECTIVITY_SERVICE);
-
-            boolean isAtiva = cm.getActiveNetworkInfo() != null &&
-                    cm.getActiveNetworkInfo().isConnectedOrConnecting();
-
-            if (isAtiva) {
-                return true;
-            }
-
-        } catch (Exception ex) {
-            Log.e(TAG, "isInternetAtivaComMsg", ex);
-        }
-
-        return false;
-    }
+    private static final String TAG = ImagemUtils.class.getName();
 
     public static void loadImageCacheOrOnLine(final Context context, final String imgUrl, final ImageView imageView) {
         Picasso.with(context)

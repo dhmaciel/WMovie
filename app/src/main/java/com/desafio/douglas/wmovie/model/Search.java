@@ -1,11 +1,11 @@
 package com.desafio.douglas.wmovie.model;
 
-import java.io.Serializable;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Search implements Serializable
-{
+import java.io.Serializable;
+
+public class Search implements Serializable {
     @SerializedName("Title")
     @Expose
     private String title;

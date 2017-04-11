@@ -6,12 +6,10 @@ import android.util.Log;
 import android.view.View;
 
 import com.desafio.douglas.wmovie.model.Search;
-import com.desafio.douglas.wmovie.model.SearchMovie;
 import com.desafio.douglas.wmovie.web_service.ApiClient;
 import com.desafio.douglas.wmovie.web_service.ApiInterface;
 import com.desafio.douglas.wmovie.web_service.SearchMoviesWS;
 
-import java.lang.ref.WeakReference;
 import java.util.List;
 
 /**

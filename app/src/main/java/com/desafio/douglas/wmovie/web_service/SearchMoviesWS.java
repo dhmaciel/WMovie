@@ -1,7 +1,5 @@
 package com.desafio.douglas.wmovie.web_service;
 
-import android.content.Context;
-
 import com.desafio.douglas.wmovie.background_task.IDownloadMoviesCallBack;
 import com.desafio.douglas.wmovie.model.SearchMovie;
 

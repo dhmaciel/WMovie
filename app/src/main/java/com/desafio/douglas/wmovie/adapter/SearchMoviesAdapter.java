@@ -11,11 +11,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.desafio.douglas.wmovie.R;
-import com.desafio.douglas.wmovie.activity.MainActivity;
 import com.desafio.douglas.wmovie.activity.MovieDetailActivity;
 import com.desafio.douglas.wmovie.activity.SearchResultsActivity;
 import com.desafio.douglas.wmovie.model.Search;
-import com.desafio.douglas.wmovie.util.Utils;
+import com.desafio.douglas.wmovie.util.ImagemUtils;
 
 import java.util.List;
 
@@ -59,7 +58,7 @@ public class SearchMoviesAdapter  extends RecyclerView.Adapter<SearchMoviesAdapt
     public void onBindViewHolder(SearchMoviesViewHolder holder, int position) {
         final Search search = searchList.get(position);
 
-        Utils.loadImageCacheOrOnLine(context, search.getPoster(), holder.imageViewPoster);
+        ImagemUtils.loadImageCacheOrOnLine(context, search.getPoster(), holder.imageViewPoster);
 
         holder.txtTitle.setText(search.getTitle());
         holder.txtYear.setText(search.getYear());

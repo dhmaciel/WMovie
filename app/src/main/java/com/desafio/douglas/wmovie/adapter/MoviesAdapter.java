@@ -14,7 +14,7 @@ import com.desafio.douglas.wmovie.R;
 import com.desafio.douglas.wmovie.activity.MainActivity;
 import com.desafio.douglas.wmovie.activity.MovieDetailActivity;
 import com.desafio.douglas.wmovie.model.DetailMovie;
-import com.desafio.douglas.wmovie.util.Utils;
+import com.desafio.douglas.wmovie.util.ImagemUtils;
 
 import java.util.List;
 
@@ -67,7 +67,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MoviesView
         holder.txtImdbRate.setText(detailMovie.getImdbRating());
         holder.txtMetacriticRate.setText(detailMovie.getMetascore());
 
-        Utils.loadImageCacheOrOnLine(context, detailMovie.getPoster(), holder.imagePoster);
+        ImagemUtils.loadImageCacheOrOnLine(context, detailMovie.getPoster(), holder.imagePoster);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

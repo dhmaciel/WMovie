@@ -3,7 +3,7 @@ package com.desafio.douglas.wmovie.web_service;
 import android.content.Context;
 
 import com.desafio.douglas.wmovie.R;
-import com.desafio.douglas.wmovie.util.Utils;
+import com.desafio.douglas.wmovie.util.ConexaoUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -46,7 +46,7 @@ public class ApiClient {
             @Override
             public Response intercept(Chain chain) throws IOException {
                 Response originalResponse = chain.proceed(chain.request());
-                if (Utils.isInternetAtiva(context)) {
+                if (ConexaoUtils.isInternetAtiva(context)) {
                     int maxAge = 86400; // read from cache for 24 hour.
                     return originalResponse.newBuilder()
                             .header("Cache-Control", "public, max-age=" + maxAge)

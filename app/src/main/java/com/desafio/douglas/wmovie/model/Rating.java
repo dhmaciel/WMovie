@@ -1,15 +1,15 @@
 package com.desafio.douglas.wmovie.model;
 
-import java.io.Serializable;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+
+import java.io.Serializable;
 
 /**
  * Created by worlo on 06/04/2017.
  */
 
-public class Rating implements Serializable
-{
+public class Rating implements Serializable {
 
     @SerializedName("Source")
     @Expose
