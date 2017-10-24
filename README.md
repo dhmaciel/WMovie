@@ -1,10 +1,10 @@
 # WMovie
 
-Aplicativo android para cadastro de informações de filme baseado na api imdb: http://www.omdbapi.com/
+Aplicativo android para informações de filmes baseado na api imdb: http://www.omdbapi.com/
 
 ## Começando
 
-Estas instruções devem lhe guiar como instalar o aplicativo, qual versão da plataforma android é necessária e como foi desenvolvido a aplicação.
+Estas instruções devem lhe guiar como instalar o aplicativo, qual versão da plataforma android necessária e como foi desenvolvido a aplicação.
 
 ### Pré-requisitos
 
@@ -14,20 +14,28 @@ Para instalação em um dispositivo este deve possuir no mínimo a versão 15 (I
 
 ![Alt text](https://preview.ibb.co/htOz1Q/Screenshot_Git_Hub.jpg "Optional title")
 
+Pesquisa de filmes
+
+```
+Pesquisa de filmes por nome.
+```
+
+Resultado da pesquisa
+
+```
+Visualizar todos filmes contendo a pesquisa inserida.
+```
+
 Listagem de filmes
 
 ```
 Pode visualizar os filmes salvos e realizar uma pesquisa de filmes.
 ```
 
-Resultado da pesquisa
-```
-Visualizar todos filmes contendo a pesquisa inserida.
-```
-
 Dados do filme
+
 ```
-Possui dados do filme selecionado e pode salvar o filme ou exluir.
+Possui dados do filme selecionado, pode salvar ou exluir um registro.
 ```
 
 ## Executando os testes
